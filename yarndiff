@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#
+# For documentation and license see https://github.com/darule0/yarndiff/
+#
+GIT_INSTALLED="1"
+command -v git >/dev/null 2>&1 ||
+{ 
+ GIT_INSTALLED="0"
+}
+rm -fr ${HOME}/.yarndiff.dd4b66ed-a43d-48ec-8e32-1b901bc8ea8e
+mkdir ${HOME}/.yarndiff.dd4b66ed-a43d-48ec-8e32-1b901bc8ea8e
+chmod u+rx ${HOME}/.yarndiff.dd4b66ed-a43d-48ec-8e32-1b901bc8ea8e
+if [ "$GIT_INSTALLED" -eq "1" ]; then
+ git clone https://github.com/darule0/yarndiff.git ${HOME}/.yarndiff.dd4b66ed-a43d-48ec-8e32-1b901bc8ea8e/ >> /dev/null 2>> /dev/null
+else
+ wget -O ${HOME}/.yarndiff.dd4b66ed-a43d-48ec-8e32-1b901bc8ea8e/yarndiff.sh https://github.com/darule0/yarndiff/blob/main/yarndiff.sh?raw=true >> /dev/null 2>> /dev/null
+fi
+chmod u+rx ${HOME}/.yarndiff.dd4b66ed-a43d-48ec-8e32-1b901bc8ea8e/yarndiff.sh
+${HOME}/.yarndiff.dd4b66ed-a43d-48ec-8e32-1b901bc8ea8e/yarndiff.sh $@
