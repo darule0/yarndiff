@@ -59,6 +59,8 @@ yarndiff container_log1 container_log2
 
 ```
 
+![alt text](https://raw.githubusercontent.com/darule0/yarndiff/main/yarndiff.png)
+
 ## Directories Used
 | directory | purpose |
 | :--- | :--- |
