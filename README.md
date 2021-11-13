@@ -9,9 +9,9 @@ Yarn logs from two runs of the same application cannot be contrasted using a gen
 I have decided to automate this part my job function in the form of a bash script which examines yarn logs and identifies differences which I find useful when troubleshooting yarn application performance and functionality problems. 
   
 ## Description
-yarndiff is a Linux command line utility which contrasts yarn logs from two runs of a yarn application and displays log entries which both, have changed; and that I find helpful when troubleshooting yarn application performance and/or functionality problems.
+yarndiff is a Linux command line utility which contrasts yarn logs from two runs of a yarn application and displays a sample log entry for each kind of log entry that is found to be unique to either of the log files.
 
-For example, if a yarn application has been running without problems for years and then suddenly slows down or stops working, then I will pass in the logs from both a known working run as well as the logs from the run which had problems. With a little luck, the yarndiff output helps guide me towards the root cause and solution.
+For example, if a yarn application has been running without problems for years and then suddenly slows down or stops working, then I will pass in the container logs from both a known working run as well as the container logs from the run which had problems. With a little luck, the yarndiff output helps guide me towards the root cause and solution.
 
 ## Online Installation w/ CI
 ```console
