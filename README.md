@@ -71,7 +71,7 @@ yarndiff container_log1 container_log2
 | container.log.file | name of input log4j file |
 | container.count | number of lines which begin with the word "Container: "|
 
-| pseudo code: regular expression generation on each container log file |
+| pseudo code: regular expression list generation derived from each container log file |
 | :--- |
 ```console
 for each line in a container log
@@ -83,11 +83,11 @@ for each line in a container log
 sort the regular expressions
 remove any duplicate regular expressions
 ```
-| pseudo code: contrast and use regular expressions generated from both container logs |
+| pseudo code: contrast and use both regular expressions lists |
 | :--- |
 ```console
-diff regular expressions obtained from both container logs
-for both container logs
+diff regular expression lists
+for both regular expression lists
   obtain sample from applicable container log
   obtain number of matches from applicable container log
 ```
