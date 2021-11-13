@@ -83,7 +83,7 @@ for each line in a container log
 sort the regular expressions
 remove any duplicate regular expressions
 ```
-| pseudo code: find and use regular expressions generated from both container logs |
+| pseudo code: contrast and use regular expressions generated from both container logs |
 | :--- |
 ```console
 diff regular expressions obtained from both container logs
