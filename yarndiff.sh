@@ -5,8 +5,25 @@
 #
 
 if [ $# -lt 2 ]; then
-    echo "Usage: yarndiff <yarn container log 1> <yarn container log 2>"
-    exit 1
+  echo -e "\e[91m"
+  echo "▓██   ██▓ ▄▄▄       ██▀███   ███▄    █ ▓█████▄  ██▓  █████▒ █████▒"
+  echo " ▒██  ██▒▒████▄    ▓██ ▒ ██▒ ██ ▀█   █ ▒██▀ ██▌▓██▒▓██   ▒▓██   ▒ "
+  echo "  ▒██ ██░▒██  ▀█▄  ▓██ ░▄█ ▒▓██  ▀█ ██▒░██   █▌▒██▒▒████ ░▒████ ░ "
+  echo "  ░ ▐██▓░░██▄▄▄▄██ ▒██▀▀█▄  ▓██▒  ▐▌██▒░▓█▄   ▌░██░░▓█▒  ░░▓█▒  ░ "
+  echo "  ░ ██▒▓░ ▓█   ▓██▒░██▓ ▒██▒▒██░   ▓██░░▒████▓ ░██░░▒█░   ░▒█░    "
+  echo "   ██▒▒▒  ▒▒   ▓▒█░░ ▒▓ ░▒▓░░ ▒░   ▒ ▒  ▒▒▓  ▒ ░▓   ▒ ░    ▒ ░    "
+  echo " ▓██ ░▒░   ▒   ▒▒ ░  ░▒ ░ ▒░░ ░░   ░ ▒░ ░ ▒  ▒  ▒ ░ ░      ░      "
+  echo " ▒ ▒ ░░    ░   ▒     ░░   ░    ░   ░ ░  ░ ░  ░  ▒ ░ ░ ░    ░ ░    "
+  echo " ░ ░           ░  ░   ░              ░    ░     ░                 "
+  echo " ░ ░                                    ░                     (TM)"
+  echo -e "\e[39m"
+  echo "╔════════════════════════════════════════════════════════════════════════╗"
+  echo "║ For documentation and license see https://github.com/darule0/yarndiff/ ║"
+  echo "╚════════════════════════════════════════════════════════════════════════╝"
+  echo ""
+  echo "Usage: yarndiff <yarn container log 1> <yarn container log 2>"
+  echo ""
+  exit 1
 fi
 CONTAINER_LOG_1=$1
 CONTAINER_LOG_2=$2
