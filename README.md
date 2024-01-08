@@ -20,6 +20,7 @@ mkdir ~/bin
 chmod u+rx ~/bin
 wget -O ~/bin/yarndiff https://github.com/darule0/yarndiff/blob/main/yarndiff?raw=true
 chmod u+rx ~/bin/yarndiff
+source ~/.profile
 
 ```
 
